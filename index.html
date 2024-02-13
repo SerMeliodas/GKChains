@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/20.0.0/tween.umd.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.149.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.149.0/examples/jsm/",
+          "tween": "https://cdnjs.cloudflare.com/ajax/libs/tween.js/21.0.0/tween.umd.js"
+        }
+      }
+    </script>
+    <title>GKChains</title>
+</head>
+<body>
+    <header class="header">
+  <div class="wrapper">
+    <img class="header__logo" src="svg/logo.svg" alt="logo">
+    <div class="header__nav-bar nav-bar">
+      <div class="nav-bar__item"><a href="#about">O nas</a></div>
+      <div class="nav-bar__item"><a href="#products">Naše producty</a></div>
+      <div class="nav-bar__item"><a href="#contact-form">Kontakt</a></div>
+    </div>
+  </div>
+</header>
+
+
+    <section class="main">
+      <div class="wrapper">
+        <img class="main__prerender" src="img/prerender.png" alt="prerender">
+        <div class="main__right">
+          <img class="main__logo" src="svg/logowhite.svg" alt="logo">
+          <div class="main__button button"><a href="#contact-form">OBJEDNAŤ</a></div>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <a name="about"></a>
+      <div class="wrapper">
+        <div class="about__subtitle subtitle">O nas</div>
+        <div class="about__content">
+          Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.
+        </div>
+      </div>
+    </section>
+    <section class="products">
+      <a name="products" ></a>
+      <div class="wrapper">
+        <div class="products__subtitle subtitle">Naše producty</div>
+        <div class="products__buttons">
+          <img draggable="false" class="products__scroll" id="backward" src="svg/left_arrow.svg" alt="left_arrow">
+          <img draggable="false" class="products__scroll" id="forward" src="svg/right_arrow.svg" alt="right_arrow">
+        </div>
+      </div>
+      <div id="scene" class="products__scene" >
+      </div>
+    </section>
+    <section class="contact-form">
+      <a name="contact-form"></a>
+      <div class="contact-form__subtitle subtitle">Kontaktujte nas</div>
+      <div class="wrapper">
+        <div class="contact-form__left">
+          <form class="contact-form__form" action="">
+            <div class="contact-form__fio">
+              <input class="contact-form__input" type="text" placeholder="MENO" >
+              <input class="contact-form__input" type="text" placeholder="PRIEZVISKO">
+            </div>
+            <input class="contact-form__input" type="email" placeholder="EMAIL"><br>
+            <textarea class="contact-form__message contact-form__input" placeholder="SPRAVA"></textarea>
+            <div class="contact-form__button button">ODOSLAŤ</div>
+          </form>
+        </div>
+        <div class="contact-form__right">
+          <div class="contact-form__text">
+            Alebo možte použit naše socialne sieťe
+          </div>
+          <div class="contact-form__contacts">
+            <a href="#"><img class="contact-form__social" src="svg/instagram.svg" alt="instagram"></a>
+            <a href="#"><img class="contact-form__social" src="svg/telegram.svg" alt="telegram"></a>
+            <a href="#"><img class="contact-form__social" src="svg/email.svg" alt="email"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+</footer>
+
+    <script type="module" src="js/index.js"></script>
+</body>
+</html>
